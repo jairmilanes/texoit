@@ -1,0 +1,20 @@
+version: "2.4"
+services:
+  server:
+    platform: linux/amd64
+    build:
+      context: ./api
+      dockerfile: ./Dockerfile
+    ports:
+      - "3131:3131"
+    environment:
+      - NODE_ENV=production
+  app:
+    platform: linux/amd64
+    build:
+      context: ./app
+      dockerfile: ./Dockerfile
+    ports:
+      - "127.0.0.1:9000:9000"
+    environment:
+      - NODE_ENV=production

@@ -1,0 +1,55 @@
+{
+  "name": "texoit-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "star-wars",
+  "author": "Jair Milanes",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop --port 8003",
+    "start": "gatsby develop --port 8003",
+    "build": "gatsby build",
+    "serve": "gatsby serve --host=0.0.0.0 --port=9000",
+    "clean": "gatsby clean",
+    "lint": "eslint . --fix",
+    "format": "prettier . --write",
+    "typecheck": "tsc --noEmit",
+    "cy:open": "cypress open --browser chrome --e2e",
+    "test:e2e": "CYPRESS_SUPPORT=y start-server-and-test develop http://localhost:8000 cy:open"
+  },
+  "dependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "autoprefixer": "^10.4.19",
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "lodash-es": "^4.17.21",
+    "postcss": "^8.4.38",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.4",
+    "react-paginate": "^8.2.0",
+    "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^10.0.1",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "cypress": "^13.9.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "gatsby-cypress": "^3.13.1",
+    "prettier": "3.2.5",
+    "start-server-and-test": "^2.0.3",
+    "typescript": "^5.3.3"
+  }
+}
